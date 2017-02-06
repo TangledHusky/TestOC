@@ -68,7 +68,7 @@
         NSString *str = [NSString stringWithFormat:@"用户名：%@  姓名：%@",dict[@"userId"],dict[@"name"]];
         [self renderButtons:str];
         
-        // responseCallback 给后台的回复
+        // responseCallback 给js的回复
         responseCallback(@"报告，oc已收到js的请求");
     }];
 
