@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Test Xib View Controller-->
+        <scene sceneID="Rya-OA-xjB">
+            <objects>
+                <viewController storyboardIdentifier="TestXibViewController" id="mHz-7W-xBD" customClass="TestXibViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ot9-Q3-v1Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="jCk-wf-CCg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CIL-xX-SjC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JEg-Di-7Ac" customClass="XibShow">
+                                <rect key="frame" x="0.0" y="56" width="375" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aGq-6Q-6bg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oz7-M8-l6V" customClass="NoXibView">
+                                <rect key="frame" x="0.0" y="116" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.1137254902" green="0.71372549019999998" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XjE-rE-aTQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JEg-Di-7Ac" firstAttribute="leading" secondItem="CIL-xX-SjC" secondAttribute="leading" id="7xD-SR-WM0"/>
+                            <constraint firstItem="Oz7-M8-l6V" firstAttribute="leading" secondItem="CIL-xX-SjC" secondAttribute="leading" id="MGg-PF-J76"/>
+                            <constraint firstAttribute="trailing" secondItem="Oz7-M8-l6V" secondAttribute="trailing" id="NsN-3N-GrN"/>
+                            <constraint firstItem="Oz7-M8-l6V" firstAttribute="top" secondItem="JEg-Di-7Ac" secondAttribute="bottom" constant="10" id="Vk8-HX-YUa"/>
+                            <constraint firstAttribute="trailing" secondItem="JEg-Di-7Ac" secondAttribute="trailing" id="X6n-4v-Wno"/>
+                            <constraint firstItem="JEg-Di-7Ac" firstAttribute="top" secondItem="Ot9-Q3-v1Z" secondAttribute="bottom" constant="36" id="gv4-zC-4SY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m6V-2T-qMe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="781.25937031484261"/>
+        </scene>
+    </scenes>
+</document>
