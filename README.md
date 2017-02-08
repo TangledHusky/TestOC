@@ -6,8 +6,8 @@
 <hr />
 <p>目前博客内存在的：</p>
 <p>1、webviewJavaScriptBridge测试</p>
-(https://github.com/TangledHusky/TestOC/blob/master/%E5%9B%BE%E7%89%87%E8%B5%84%E6%BA%90/js%E5%92%8Coc%E4%BA%A4%E4%BA%92.gif)
-<p>![image]<br />webviewJavaScriptBridge测试</p>
+![image](https://github.com/TangledHusky/TestOC/blob/master/%E5%9B%BE%E7%89%87%E8%B5%84%E6%BA%90/js%E5%92%8Coc%E4%BA%A4%E4%BA%92.gif)
+<p><br />webviewJavaScriptBridge测试</p>
 <p>博客详情：http://www.cnblogs.com/yajunLi/p/6369257.html</p>
 <p>&nbsp;</p>
 <p>2、画板涂鸦功能</p>
