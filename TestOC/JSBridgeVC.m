@@ -13,9 +13,11 @@
 
 @property WebViewJavascriptBridge* bridge;
 
+
 @end
 
 @implementation JSBridgeVC
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,6 +25,7 @@
     
     UIWebView* webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:webView];
+    
     
     //初始化  WebViewJavascriptBridge
     if (_bridge) { return; }

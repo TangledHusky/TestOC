@@ -185,6 +185,8 @@
 
         case 14:{
             JSBridgeVC *web = [[JSBridgeVC alloc] init];
+//            web.isRead = YES;
+            [web setValue:@(1) forKey:NSStringFromSelector(@selector(isRead))];
             [self.navigationController pushViewController:web animated:YES];
             break;
         }
