@@ -10,5 +10,4 @@
 
 @interface JSBridgeVC : UIViewController
 
-
 @end

@@ -13,11 +13,9 @@
 
 @property WebViewJavascriptBridge* bridge;
 
-
 @end
 
 @implementation JSBridgeVC
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,7 +23,6 @@
     
     UIWebView* webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:webView];
-    
     
     //初始化  WebViewJavascriptBridge
     if (_bridge) { return; }
@@ -71,7 +68,7 @@
         NSString *str = [NSString stringWithFormat:@"用户名：%@  姓名：%@",dict[@"userId"],dict[@"name"]];
         [self renderButtons:str];
         
-        // responseCallback 给js的回复
+        // responseCallback 给后台的回复
         responseCallback(@"报告，oc已收到js的请求");
     }];
 

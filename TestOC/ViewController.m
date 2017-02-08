@@ -26,6 +26,7 @@
 #import "TestXibViewController.h"
 #import "PicEditViewController.h"
 #import "JSBridgeVC.h"
+#import "BaiBanViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -58,6 +59,9 @@
                 @"xib到试图显示之间的方法调用",
                 @"图片添加水印",
                 @"WebViewJavascriptBridge测试",
+                @"白板绘画",
+                @"",
+                @"",
                 nil];
     
     mytableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight-64) style:UITableViewStylePlain];
@@ -185,8 +189,12 @@
 
         case 14:{
             JSBridgeVC *web = [[JSBridgeVC alloc] init];
-//            web.isRead = YES;
-            [web setValue:@(1) forKey:NSStringFromSelector(@selector(isRead))];
+            [self.navigationController pushViewController:web animated:YES];
+            break;
+        }
+        case 15:{
+            BaiBanViewController *web = [[BaiBanViewController alloc] init];
+            web.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:web animated:YES];
             break;
         }

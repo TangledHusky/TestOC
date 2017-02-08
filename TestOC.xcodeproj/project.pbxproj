@@ -40,6 +40,14 @@
 		FACC07291E35A17D0079FAA0 /* TestXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FACC07281E35A17D0079FAA0 /* TestXibViewController.m */; };
 		FACC072C1E35A19F0079FAA0 /* XibShow.m in Sources */ = {isa = PBXBuildFile; fileRef = FACC072B1E35A19F0079FAA0 /* XibShow.m */; };
 		FACC072E1E35A1B90079FAA0 /* XibShow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACC072D1E35A1B90079FAA0 /* XibShow.xib */; };
+		FADE07A11E4ABB1F00631ACB /* BaiBanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE07A01E4ABB1F00631ACB /* BaiBanViewController.m */; };
+		FADE07A41E4ABB4100631ACB /* BaibanView.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE07A31E4ABB4100631ACB /* BaibanView.m */; };
+		FADE07A71E4AC3DC00631ACB /* YJBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE07A61E4AC3DC00631ACB /* YJBezierPath.m */; };
+		FADE07AA1E4ACEFD00631ACB /* SelectColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE07A91E4ACEFD00631ACB /* SelectColorPickerView.m */; };
+		FADE07AE1E4ACF2300631ACB /* ColorPalette.png in Resources */ = {isa = PBXBuildFile; fileRef = FADE07AC1E4ACF2300631ACB /* ColorPalette.png */; };
+		FADE07AF1E4ACF2300631ACB /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = FADE07AD1E4ACF2300631ACB /* point.png */; };
+		FADE07B21E4AF6F400631ACB /* SelectColorEasyView.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE07B11E4AF6F400631ACB /* SelectColorEasyView.m */; };
+		FADE07B51E4AF80800631ACB /* UIColor+hex.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE07B41E4AF80800631ACB /* UIColor+hex.m */; };
 		FAED9C101E2DAFEB009540B9 /* webviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAED9C0F1E2DAFEB009540B9 /* webviewViewController.m */; };
 		FAED9C131E2DB1BB009540B9 /* WebviewProgressLine.m in Sources */ = {isa = PBXBuildFile; fileRef = FAED9C121E2DB1BB009540B9 /* WebviewProgressLine.m */; };
 		FAED9C161E2DBA68009540B9 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FAED9C151E2DBA68009540B9 /* UIView+Extension.m */; };
@@ -132,6 +140,20 @@
 		FACC072A1E35A19F0079FAA0 /* XibShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibShow.h; sourceTree = "<group>"; };
 		FACC072B1E35A19F0079FAA0 /* XibShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibShow.m; sourceTree = "<group>"; };
 		FACC072D1E35A1B90079FAA0 /* XibShow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibShow.xib; sourceTree = "<group>"; };
+		FADE079F1E4ABB1F00631ACB /* BaiBanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiBanViewController.h; sourceTree = "<group>"; };
+		FADE07A01E4ABB1F00631ACB /* BaiBanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiBanViewController.m; sourceTree = "<group>"; };
+		FADE07A21E4ABB4100631ACB /* BaibanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaibanView.h; sourceTree = "<group>"; };
+		FADE07A31E4ABB4100631ACB /* BaibanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaibanView.m; sourceTree = "<group>"; };
+		FADE07A51E4AC3DC00631ACB /* YJBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBezierPath.h; sourceTree = "<group>"; };
+		FADE07A61E4AC3DC00631ACB /* YJBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJBezierPath.m; sourceTree = "<group>"; };
+		FADE07A81E4ACEFD00631ACB /* SelectColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectColorPickerView.h; sourceTree = "<group>"; };
+		FADE07A91E4ACEFD00631ACB /* SelectColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectColorPickerView.m; sourceTree = "<group>"; };
+		FADE07AC1E4ACF2300631ACB /* ColorPalette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColorPalette.png; sourceTree = "<group>"; };
+		FADE07AD1E4ACF2300631ACB /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
+		FADE07B01E4AF6F400631ACB /* SelectColorEasyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectColorEasyView.h; sourceTree = "<group>"; };
+		FADE07B11E4AF6F400631ACB /* SelectColorEasyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectColorEasyView.m; sourceTree = "<group>"; };
+		FADE07B31E4AF80800631ACB /* UIColor+hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+hex.h"; sourceTree = "<group>"; };
+		FADE07B41E4AF80800631ACB /* UIColor+hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+hex.m"; sourceTree = "<group>"; };
 		FAED9C0E1E2DAFEB009540B9 /* webviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webviewViewController.h; sourceTree = "<group>"; };
 		FAED9C0F1E2DAFEB009540B9 /* webviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webviewViewController.m; sourceTree = "<group>"; };
 		FAED9C111E2DB1BB009540B9 /* WebviewProgressLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebviewProgressLine.h; sourceTree = "<group>"; };
@@ -338,6 +360,7 @@
 		FAB22EE31D51CE9400B46C51 /* TestOC */ = {
 			isa = PBXGroup;
 			children = (
+				FADE079E1E4ABAF700631ACB /* 白板绘画 */,
 				FA70CA501E4709CB000C90D1 /* WebViewJavascriptBridge测试 */,
 				FA7C210E1E35FACF000E2E81 /* 图片添加水印 */,
 				FACC07261E35A14E0079FAA0 /* XibToShow */,
@@ -409,6 +432,33 @@
 			name = XibToShow;
 			sourceTree = "<group>";
 		};
+		FADE079E1E4ABAF700631ACB /* 白板绘画 */ = {
+			isa = PBXGroup;
+			children = (
+				FADE07AB1E4ACF0800631ACB /* 取色板 */,
+				FADE079F1E4ABB1F00631ACB /* BaiBanViewController.h */,
+				FADE07A01E4ABB1F00631ACB /* BaiBanViewController.m */,
+				FADE07A21E4ABB4100631ACB /* BaibanView.h */,
+				FADE07A31E4ABB4100631ACB /* BaibanView.m */,
+				FADE07A51E4AC3DC00631ACB /* YJBezierPath.h */,
+				FADE07A61E4AC3DC00631ACB /* YJBezierPath.m */,
+			);
+			name = "白板绘画";
+			sourceTree = "<group>";
+		};
+		FADE07AB1E4ACF0800631ACB /* 取色板 */ = {
+			isa = PBXGroup;
+			children = (
+				FADE07AC1E4ACF2300631ACB /* ColorPalette.png */,
+				FADE07AD1E4ACF2300631ACB /* point.png */,
+				FADE07A81E4ACEFD00631ACB /* SelectColorPickerView.h */,
+				FADE07A91E4ACEFD00631ACB /* SelectColorPickerView.m */,
+				FADE07B01E4AF6F400631ACB /* SelectColorEasyView.h */,
+				FADE07B11E4AF6F400631ACB /* SelectColorEasyView.m */,
+			);
+			name = "取色板";
+			sourceTree = "<group>";
+		};
 		FAED9C0D1E2DAFAF009540B9 /* UIWebview进度条 */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,6 +502,8 @@
 				FAED9C151E2DBA68009540B9 /* UIView+Extension.m */,
 				FAF574B81E0CCACC003F81E5 /* WZXNetworking.h */,
 				FAF574B91E0CCACC003F81E5 /* WZXNetworking.m */,
+				FADE07B31E4AF80800631ACB /* UIColor+hex.h */,
+				FADE07B41E4AF80800631ACB /* UIColor+hex.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -570,6 +622,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB22EF41D51CE9400B46C51 /* LaunchScreen.storyboard in Resources */,
+				FADE07AE1E4ACF2300631ACB /* ColorPalette.png in Resources */,
+				FADE07AF1E4ACF2300631ACB /* point.png in Resources */,
 				FAB22EF11D51CE9400B46C51 /* Assets.xcassets in Resources */,
 				FA4A3E351E0E64E900395DE6 /* TestAVPlayerViewController.xib in Resources */,
 				FAF574BF1E0CCBC6003F81E5 /* FDTCell.xib in Resources */,
@@ -650,16 +704,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA6E9BFC1E28AFF8002849E6 /* MainTabbarVC.m in Sources */,
+				FADE07B51E4AF80800631ACB /* UIColor+hex.m in Sources */,
 				FA6E9BF81E275974002849E6 /* WKWebViewViewController.m in Sources */,
 				FA4A3E2A1E0D087000395DE6 /* FDTMasoryCell.m in Sources */,
+				FADE07A71E4AC3DC00631ACB /* YJBezierPath.m in Sources */,
 				FAF574BE1E0CCBC6003F81E5 /* FDTCell.m in Sources */,
 				FA4A3E3D1E1254DA00395DE6 /* JBSView.m in Sources */,
 				FA582C841E35DE86003860E1 /* NoXibView.m in Sources */,
 				FAB22EEC1D51CE9400B46C51 /* ViewController.m in Sources */,
 				FAED9C131E2DB1BB009540B9 /* WebviewProgressLine.m in Sources */,
+				FADE07B21E4AF6F400631ACB /* SelectColorEasyView.m in Sources */,
 				FA6E9BDB1E20C256002849E6 /* TestZFPlayerViewController.m in Sources */,
 				FA6E9BD81E1F8E10002849E6 /* BaseLandScreenViewController.m in Sources */,
 				FACC072C1E35A19F0079FAA0 /* XibShow.m in Sources */,
+				FADE07AA1E4ACEFD00631ACB /* SelectColorPickerView.m in Sources */,
 				FAF574B61E0CBFE8003F81E5 /* DeepCopyViewController.m in Sources */,
 				FA6E9BE21E233CAC002849E6 /* LandScreenPushViewController.m in Sources */,
 				FAED9C101E2DAFEB009540B9 /* webviewViewController.m in Sources */,
@@ -673,12 +731,14 @@
 				FA4A3E2E1E0E5A2E00395DE6 /* TestAVPlayerViewController.m in Sources */,
 				FAF574BA1E0CCACC003F81E5 /* WZXNetworking.m in Sources */,
 				FA6E9BF01E24E264002849E6 /* GCDBaseViewController.m in Sources */,
+				FADE07A11E4ABB1F00631ACB /* BaiBanViewController.m in Sources */,
 				FAED9C161E2DBA68009540B9 /* UIView+Extension.m in Sources */,
 				FA6E9BE81E236725002849E6 /* FMDBViewController.m in Sources */,
 				FACC07291E35A17D0079FAA0 /* TestXibViewController.m in Sources */,
 				FAB22EE91D51CE9400B46C51 /* AppDelegate.m in Sources */,
 				FAB22EE61D51CE9400B46C51 /* main.m in Sources */,
 				FA6E9BF41E271422002849E6 /* NSThreadViewController.m in Sources */,
+				FADE07A41E4ABB4100631ACB /* BaibanView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
