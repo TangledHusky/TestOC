@@ -28,10 +28,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     NSLog(@"viewDidLoad frame:%@",NSStringFromCGRect(self.view.frame));
-//    动画旋转，但好像没用
-//    _originRect = self.view.frame;
-//    _isNormalOrientation = YES;
-//    [self fullScreenBtnAction];
+
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
      [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
@@ -117,31 +114,6 @@
     return UIInterfaceOrientationLandscapeRight;
 }
 
-
-- (void)fullScreenBtnAction {
-    if (_isNormalOrientation) {   // 如果当前是默认的竖屏
-        //注：当前self是UIView对象，如果是VC，则为self.view.....
-        self.view.frame = CGRectMake(0, 0, KScreenHeight, KScreenWidth);
-        CGRect frame = [UIScreen mainScreen].applicationFrame;
-        // transfrom会以当前center为锚点旋转，所以旋转后位置有偏移，需要处理
-        CGPoint center = CGPointMake(frame.origin.x + ceil(frame.size.width/2), frame.origin.y + ceil(frame.size.height/2));
-        self.view.center = center;
-        //取状态栏旋转时间
-        //        CGFloat duration = [UIApplication sharedApplication].statusBarOrientationAnimationDuration;
-        [UIView beginAnimations:nil context:nil];
-        [UIView setAnimationDuration: 0.3];
-        self.view.transform = CGAffineTransformMakeRotation(M_PI_2);
-        [UIView commitAnimations];
-    } else {
-        [UIView beginAnimations:nil context:nil];
-        [UIView setAnimationDuration: 0.3];
-        self.view.transform = CGAffineTransformIdentity;
-        [UIView commitAnimations];
-        //_originRect是进入横屏前self的frame
-        self.view.frame = _originRect;
-    }
-    _isNormalOrientation = !_isNormalOrientation; //更改状态
-}
 
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
