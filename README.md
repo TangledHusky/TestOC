@@ -2,23 +2,35 @@
 
 整体一览图
 
-![image](https://github.com/TangledHusky/TestOC/blob/master/%E5%9B%BE%E7%89%87%E8%B5%84%E6%BA%90/TestOC%E9%A6%96%E9%A1%B5%E4%B8%80%E8%A7%88.png)
-
+@"深浅拷贝测试"<br/>
+@"FDTemplateLayoutCell测试"<br/>
+@"AVPlayer视频播放 ZFPlayer"<br/>
+@"渐变色3种方式"<br/>
+@"测试横屏 present"<br/>
+@"FMDB-建库-建表-增删改"<br/>
+@"openURL-打电话、短信、邮件"<br/>
+@"GCD基础篇"<br/>
+@"NSThread"<br/>
+@"WKWebviw"<br/>
+@"UIWebviw进度条"<br/>
+@"xib到试图显示之间的方法调用"<br/>
+@"图片添加水印"<br/>
+@"WebViewJavascriptBridge测试"<br/>
+@"白板绘画"<br/>
+@"测试圆角性能"<br/>
+@"bugly集成测试"<br/>
+@"照片裁剪"<br/>
  
 
 目前博客内存在的：
 
 1、webviewJavaScriptBridge测试
-
-![image](https://github.com/TangledHusky/TestOC/blob/master/%E5%9B%BE%E7%89%87%E8%B5%84%E6%BA%90/js%E5%92%8Coc%E4%BA%A4%E4%BA%92.gif)
-
-
-webviewJavaScriptBridge测试
-
 博客详情：http://www.cnblogs.com/yajunLi/p/6369257.html
 
- 
 
 2、画板涂鸦功能
-
 博客详情：http://www.cnblogs.com/yajunLi/p/6379058.html
+
+
+3、图片裁剪功能
+博客详情：https://www.cnblogs.com/yajunLi/p/9377852.html
