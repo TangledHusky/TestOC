@@ -15,6 +15,11 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
+//    _icon.layer.cornerRadius = 20;
+//    _icon.layer.masksToBounds  = YES;
+//    
+    _icon.image = [_icon.image cutCircleImage];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

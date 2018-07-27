@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JPFPSStatus.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JSONModel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,7 +67,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2207632CFEEC2B93031D6611D35F1741</key>
+		<key>46525DE570E60E787E97EC61AFB585B1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,12 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>657A68E716015964ABD747058581F632</key>
+		<key>72428ABC0D6AD08EE76A7F5C56B386D2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>719AC4778A91458CE57D3EE6F34B8714</key>
+		<key>7898062C356447F3930486B051EEDB1B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,12 +102,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BE1EB0BA55F55A03FA9F52FDFE24E3BF</key>
+		<key>B5ABC01683CDF94F5C25CAFCA60129D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D358FD56C8A42641E0A19816A93A2FDF</key>
+		<key>C1883C7EE382FF2EA72594871FCDC1EC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FFC582E40BAED469F58C5D06FA2D4EAA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

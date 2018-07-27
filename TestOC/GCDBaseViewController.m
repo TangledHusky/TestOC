@@ -239,7 +239,7 @@
     dispatch_async(quene, ^{
         dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
         NSLog(@"run task 2");
-        sleep(1);
+        sleep(2);
         NSLog(@"complete task 2");
         dispatch_semaphore_signal(semaphore);
         

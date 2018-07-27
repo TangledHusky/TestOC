@@ -32,6 +32,7 @@
  */
 - (void)zf_playerModel:(ZFPlayerModel *)playerModel;
 
+- (void)zf_playerShowOrHideControlView;
 /** 
  * 显示控制层
  */

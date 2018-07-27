@@ -14,23 +14,27 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - FMDB (2.6.2):
-    - FMDB/standard (= 2.6.2)
-  - FMDB/standard (2.6.2)
+  - Bugly (2.4.8)
+  - FMDB (2.7.2):
+    - FMDB/standard (= 2.7.2)
+  - FMDB/standard (2.7.2)
+  - JPFPSStatus (0.1)
   - JSONModel (1.7.0)
-  - Masonry (1.0.2)
+  - Masonry (1.1.0)
   - MJRefresh (3.1.12)
-  - SDWebImage (4.0.0):
-    - SDWebImage/Core (= 4.0.0)
-  - SDWebImage/Core (4.0.0)
-  - UITableView+FDTemplateLayoutCell (1.4)
+  - SDWebImage (4.1.0):
+    - SDWebImage/Core (= 4.1.0)
+  - SDWebImage/Core (4.1.0)
+  - UITableView+FDTemplateLayoutCell (1.6)
   - WebViewJavascriptBridge (6.0.2)
-  - ZFPlayer (2.1.1):
+  - ZFPlayer (2.1.5):
     - Masonry
 
 DEPENDENCIES:
   - AFNetworking
+  - Bugly
   - FMDB
+  - JPFPSStatus
   - JSONModel
   - Masonry
   - MJRefresh
@@ -41,15 +45,17 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  Bugly: da3c02408c14838d498429320545a8e439392978
+  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  JPFPSStatus: 4467a17488382e4c1700bd9d18c92ae581fd6305
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
-  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
-  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
+  SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
-  ZFPlayer: c36657da33c28c75dfb100e98e7976b5b3e1fc10
+  ZFPlayer: 8a80bf8eb4638b97fbceaefcd3ca9978e9f17c9d
 
-PODFILE CHECKSUM: 2419c34ba3aead37b8c9c9af6d5bba65a58ce315
+PODFILE CHECKSUM: eba01216b2943e21458081b19be92a1be453f708
 
 COCOAPODS: 1.1.1

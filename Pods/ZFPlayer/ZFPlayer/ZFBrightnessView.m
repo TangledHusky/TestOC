@@ -58,29 +58,20 @@
         toolbar.alpha = 0.97;
         [self addSubview:toolbar];
         
-		self.backImage = ({
-            UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 79, 76)];
-            imgView.image        = ZFPlayerImage(@"ZFPlayer_brightness");
-			[self addSubview:imgView];
-			imgView;
-		});
+        self.backImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 79, 76)];
+        self.backImage.image        = ZFPlayerImage(@"ZFPlayer_brightness");
+        [self addSubview:self.backImage];
 		
-		self.title = ({
-            UILabel *title      = [[UILabel alloc] initWithFrame:CGRectMake(0, 5, self.bounds.size.width, 30)];
-            title.font          = [UIFont boldSystemFontOfSize:16];
-            title.textColor     = [UIColor colorWithRed:0.25f green:0.22f blue:0.21f alpha:1.00f];
-            title.textAlignment = NSTextAlignmentCenter;
-            title.text          = @"亮度";
-			[self addSubview:title];
-			title;
-		});
+        self.title      = [[UILabel alloc] initWithFrame:CGRectMake(0, 5, self.bounds.size.width, 30)];
+        self.title.font          = [UIFont boldSystemFontOfSize:16];
+        self.title.textColor     = [UIColor colorWithRed:0.25f green:0.22f blue:0.21f alpha:1.00f];
+        self.title.textAlignment = NSTextAlignmentCenter;
+        self.title.text          = @"亮度";
+        [self addSubview:self.title];
 		
-		self.longView = ({
-            UIView *longView         = [[UIView alloc]initWithFrame:CGRectMake(13, 132, self.bounds.size.width - 26, 7)];
-            longView.backgroundColor = [UIColor colorWithRed:0.25f green:0.22f blue:0.21f alpha:1.00f];
-			[self addSubview:longView];
-			longView;
-		});
+        self.longView         = [[UIView alloc]initWithFrame:CGRectMake(13, 132, self.bounds.size.width - 26, 7)];
+        self.longView.backgroundColor = [UIColor colorWithRed:0.25f green:0.22f blue:0.21f alpha:1.00f];
+        [self addSubview:self.longView];
 		
 		[self createTips];
 		[self addNotification];
@@ -191,6 +182,16 @@
 - (void)dealloc {
 	[[UIScreen mainScreen] removeObserver:self forKeyPath:@"brightness"];
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)setIsStatusBarHidden:(BOOL)isStatusBarHidden {
+    _isStatusBarHidden = isStatusBarHidden;
+    [[UIWindow zf_currentViewController] setNeedsStatusBarAppearanceUpdate];
+}
+
+- (void)setIsLandscape:(BOOL)isLandscape {
+    _isLandscape = isLandscape;
+    [[UIWindow zf_currentViewController] setNeedsStatusBarAppearanceUpdate];
 }
 
 @end

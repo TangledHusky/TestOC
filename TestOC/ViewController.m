@@ -16,7 +16,6 @@
 #import "TestZFPlayerViewController.h"
 #import "JBSViewController.h"
 #import "LandScreenViewController.h"
-#import "LandScreenPushViewController.h"
 #import "FMDBViewController.h"
 #import "OpenURLViewController.h"
 #import "GCDBaseViewController.h"
@@ -27,8 +26,15 @@
 #import "PicEditViewController.h"
 #import "JSBridgeVC.h"
 #import "BaiBanViewController.h"
+#import "TestOnceViewController.h"
+#import "TestCornerTableViewController.h"
+#import "TestBuglyViewController.h"
+#import "YJImageClipViewcontroller.h"
+
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic,assign,getter=isnormal) BOOL  isNormalOrientation;
 
 @end
 
@@ -42,13 +48,14 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"OC测试";
     
+    _isNormalOrientation = false;
     
     dataArry = [NSMutableArray arrayWithObjects:
                 @"深浅拷贝测试",
                 @"FDTemplateLayoutCell测试",
                 @"AVPlayer视频播放 ZFPlayer",
                 @"渐变色3种方式",
-                @"测试横屏 push",
+                @"---通用测试，即用即删-----",
                 @"测试横屏 present",
                 @"FMDB-建库-建表-增删改",
                 @"openURL-打电话、短信、邮件",
@@ -60,8 +67,9 @@
                 @"图片添加水印",
                 @"WebViewJavascriptBridge测试",
                 @"白板绘画",
-                @"",
-                @"",
+                @"测试圆角性能",
+                @"bugly集成测试",
+                @"照片裁剪",
                 nil];
     
     mytableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight-64) style:UITableViewStylePlain];
@@ -100,7 +108,7 @@
         
         
     }
-    cell.textLabel.text = dataArry[indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld、%@",(long)indexPath.row+1,dataArry[indexPath.row]];
     
     return  cell;
 }
@@ -130,8 +138,9 @@
             break;
         }
         case 4:{
-            LandScreenPushViewController *landScreen = [[LandScreenPushViewController alloc] init];
-            [self.navigationController pushViewController:landScreen animated:YES];
+//          ---通用测试，即用即删-----
+            TestOnceViewController *once = [[TestOnceViewController alloc] init];
+            [self.navigationController pushViewController:once animated:YES];
             
             break;
         }
@@ -198,7 +207,27 @@
             [self.navigationController pushViewController:web animated:YES];
             break;
         }
+        case 16:{
+            TestCornerTableViewController *web = [[TestCornerTableViewController alloc] init];
+            web.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:web animated:YES];
+            break;
+        }
 
+        case 17:{
+            TestBuglyViewController *web = [[TestBuglyViewController alloc] init];
+            web.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:web animated:YES];
+            break;
+        }
+        case 18:{
+            YJImageClipViewcontroller *web = [[YJImageClipViewcontroller alloc] init];
+            web.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:web animated:YES];
+            break;
+        }
+
+            
         default:
             break;
     }

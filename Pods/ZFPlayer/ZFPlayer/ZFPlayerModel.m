@@ -25,8 +25,7 @@
 
 @implementation ZFPlayerModel
 
-- (UIImage *)placeholderImage
-{
+- (UIImage *)placeholderImage {
     if (!_placeholderImage) {
         _placeholderImage = ZFPlayerImage(@"ZFPlayer_loading_bgView");
     }

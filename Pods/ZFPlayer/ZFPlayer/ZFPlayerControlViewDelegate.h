@@ -30,9 +30,9 @@
 @protocol ZFPlayerControlViewDelagate <NSObject>
 
 @optional
-/**  返回按钮事件 */
+/** 返回按钮事件 */
 - (void)zf_controlView:(UIView *)controlView backAction:(UIButton *)sender;
-/**  cell播放中小屏状态 关闭按钮事件 */
+/** cell播放中小屏状态 关闭按钮事件 */
 - (void)zf_controlView:(UIView *)controlView closeAction:(UIButton *)sender;
 /** 播放按钮事件 */
 - (void)zf_controlView:(UIView *)controlView playAction:(UIButton *)sender;
@@ -58,5 +58,9 @@
 - (void)zf_controlView:(UIView *)controlView progressSliderValueChanged:(UISlider *)slider;
 /** slider触摸结束 */
 - (void)zf_controlView:(UIView *)controlView progressSliderTouchEnded:(UISlider *)slider;
+/** 控制层即将显示 */
+- (void)zf_controlViewWillShow:(UIView *)controlView isFullscreen:(BOOL)fullscreen;
+/** 控制层即将隐藏 */
+- (void)zf_controlViewWillHidden:(UIView *)controlView isFullscreen:(BOOL)fullscreen;
 
 @end

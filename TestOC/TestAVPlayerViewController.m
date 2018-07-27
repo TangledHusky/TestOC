@@ -213,6 +213,13 @@ typedef NS_ENUM(NSInteger,Direction){
     self.isBottomViewHide=!self.isBottomViewHide;
 }
 
+
+/**
+ 加载本地视频------------可替换------------
+
+ @param videoIndex <#videoIndex description#>
+ @return <#return value description#>
+ */
 - (AVPlayerItem *)getPlayItem:(NSUInteger)videoIndex{
     NSString *urlStr = [[NSBundle mainBundle] pathForResource:@"智能拼图" ofType:@"mov"];
     AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:[NSURL fileURLWithPath:urlStr]];

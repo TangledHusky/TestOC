@@ -2,7 +2,7 @@
 //  SelectColorPickerView.m
 //  boxasst_iosphone
 //
-//  Created by admin on 16/10/26.
+//  Created by lyj on 16/10/26.
 //  Copyright © 2016年 taixin. All rights reserved.
 //
 

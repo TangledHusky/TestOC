@@ -33,6 +33,10 @@
 - (void)zf_playerBackAction;
 /** 下载视频 */
 - (void)zf_playerDownload:(NSString *)url;
+/** 控制层即将显示 */
+- (void)zf_playerControlViewWillShow:(UIView *)controlView isFullscreen:(BOOL)fullscreen;
+/** 控制层即将隐藏 */
+- (void)zf_playerControlViewWillHidden:(UIView *)controlView isFullscreen:(BOOL)fullscreen;
 
 @end
 
@@ -54,7 +58,6 @@ typedef NS_ENUM(NSInteger, ZFPlayerState) {
 
 @interface ZFPlayerView : UIView <ZFPlayerControlViewDelagate>
 
-/** 视频model */
 /** 设置playerLayer的填充模式 */
 @property (nonatomic, assign) ZFPlayerLayerGravity    playerLayerGravity;
 /** 是否有下载功能(默认是关闭) */
@@ -73,6 +76,8 @@ typedef NS_ENUM(NSInteger, ZFPlayerState) {
 @property (nonatomic, assign) BOOL                    stopPlayWhileCellNotVisable;
 /** 当cell播放视频由全屏变为小屏时候，是否回到中间位置(默认YES) */
 @property (nonatomic, assign) BOOL                    cellPlayerOnCenter;
+/** player在栈上，即此时push或者模态了新控制器 */
+@property (nonatomic, assign) BOOL                    playerPushedOrPresented;
 
 /**
  *  单例，用于列表cell上多个视频
@@ -86,6 +91,11 @@ typedef NS_ENUM(NSInteger, ZFPlayerState) {
  * 控制层传nil，默认使用ZFPlayerControlView(如自定义可传自定义的控制层)
  */
 - (void)playerControlView:(UIView *)controlView playerModel:(ZFPlayerModel *)playerModel;
+
+/**
+ * 使用自带的控制层时候可使用此API
+ */
+- (void)playerModel:(ZFPlayerModel *)playerModel;
 
 /**
  *  自动播放，默认不自动播放

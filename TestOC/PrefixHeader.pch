@@ -20,5 +20,6 @@
 #import "WZXNetworking.h"
 #import "UIView+Extension.h"
 #import "UIColor+hex.h"
+#import "UIImage+Extension.h"
 
 #endif /* PrefixHeader_pch */

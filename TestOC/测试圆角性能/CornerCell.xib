@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="CornerCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WechatIMG2" translatesAutoresizingMaskIntoConstraints="NO" id="lGL-QC-fgK">
+                        <rect key="frame" x="15" y="14.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="SDp-Y7-edw"/>
+                            <constraint firstAttribute="height" constant="40" id="gCB-Va-455"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WechatIMG2" translatesAutoresizingMaskIntoConstraints="NO" id="Cir-aq-NDm">
+                        <rect key="frame" x="76" y="14" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="HHz-UK-UAx"/>
+                            <constraint firstAttribute="height" constant="40" id="hse-lo-rLs"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WechatIMG2" translatesAutoresizingMaskIntoConstraints="NO" id="daw-Ok-cx4">
+                        <rect key="frame" x="265" y="14" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Kjw-P2-mHg"/>
+                            <constraint firstAttribute="height" constant="40" id="Z0I-BX-RgC"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WechatIMG2" translatesAutoresizingMaskIntoConstraints="NO" id="DWa-nJ-VAk">
+                        <rect key="frame" x="209" y="14" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="1WT-HF-Eqz"/>
+                            <constraint firstAttribute="height" constant="40" id="Ako-zX-Gt8"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lGL-QC-fgK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="3cs-IH-xby"/>
+                    <constraint firstItem="daw-Ok-cx4" firstAttribute="centerY" secondItem="DWa-nJ-VAk" secondAttribute="centerY" id="8bg-tS-mvY"/>
+                    <constraint firstItem="daw-Ok-cx4" firstAttribute="centerY" secondItem="lGL-QC-fgK" secondAttribute="centerY" id="CMs-ph-Oo6"/>
+                    <constraint firstItem="lGL-QC-fgK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="I85-YN-PdY"/>
+                    <constraint firstItem="Cir-aq-NDm" firstAttribute="centerY" secondItem="lGL-QC-fgK" secondAttribute="centerY" id="WHn-i1-FxP"/>
+                    <constraint firstAttribute="trailing" secondItem="daw-Ok-cx4" secondAttribute="trailing" constant="15" id="gHP-5p-Tbp"/>
+                    <constraint firstItem="Cir-aq-NDm" firstAttribute="leading" secondItem="lGL-QC-fgK" secondAttribute="trailing" constant="21" id="hWS-EH-6br"/>
+                    <constraint firstItem="daw-Ok-cx4" firstAttribute="leading" secondItem="DWa-nJ-VAk" secondAttribute="trailing" constant="16" id="uMS-hB-8N5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="img1" destination="lGL-QC-fgK" id="40Q-xh-LmA"/>
+                <outlet property="img2" destination="daw-Ok-cx4" id="AcQ-t2-A9O"/>
+                <outlet property="img3" destination="Cir-aq-NDm" id="yCk-ws-022"/>
+                <outlet property="img4" destination="DWa-nJ-VAk" id="OCI-2v-XDX"/>
+            </connections>
+            <point key="canvasLocation" x="58" y="122"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="WechatIMG2" width="960" height="1280"/>
+    </resources>
+</document>

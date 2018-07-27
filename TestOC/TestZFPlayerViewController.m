@@ -26,7 +26,8 @@
         _playerModel                  = [[ZFPlayerModel alloc] init];
         _playerModel.title            = @"这里设置视频标题";
         _playerModel.videoURL         = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"智能拼图" ofType:@".mov"]];
-//        _playerModel.videoURL = [NSURL URLWithString:@"http://baobab.wdjcdn.com/1456117847747a_x264.mp4"];
+        _playerModel.videoURL = [NSURL URLWithString:@"http://baobab.wdjcdn.com/1456117847747a_x264.mp4"];
+        _playerModel.videoURL         = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"K12-2017-09-23-16-08-02" ofType:@".mp4"]];
         _playerModel.placeholderImage = [UIImage imageNamed:@"loading_bgView1"];
         _playerModel.fatherView       = _bgView;
         
