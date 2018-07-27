@@ -6,7 +6,6 @@
 @"FDTemplateLayoutCell测试"<br/>
 @"AVPlayer视频播放 ZFPlayer"<br/>
 @"渐变色3种方式"<br/>
-@"---通用测试，即用即删-----"<br/>
 @"测试横屏 present"<br/>
 @"FMDB-建库-建表-增删改"<br/>
 @"openURL-打电话、短信、邮件"<br/>
