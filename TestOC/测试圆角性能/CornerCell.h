@@ -11,9 +11,11 @@
 @interface CornerCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *img1;
-@property (weak, nonatomic) IBOutlet UIImageView *img2;
 @property (weak, nonatomic) IBOutlet UIImageView *img3;
-@property (weak, nonatomic) IBOutlet UIImageView *img4;
+@property (weak, nonatomic) IBOutlet UILabel *lbl;
+@property (weak, nonatomic) IBOutlet UIButton *btn;
+@property (weak, nonatomic) IBOutlet UIImageView *img2;
+
 
 -(void)fill;
 

@@ -12,4 +12,6 @@
 
 -(UIImage *)cutCircleImage;
 
+-(UIImage *)drawCircleImage;
+
 @end
