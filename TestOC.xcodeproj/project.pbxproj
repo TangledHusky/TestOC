@@ -11,6 +11,8 @@
 		FA215A612108461D005CF06C /* YJImageClipViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = FA215A602108461D005CF06C /* YJImageClipViewcontroller.m */; };
 		FA215A6521084643005CF06C /* TKImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA215A6421084643005CF06C /* TKImageView.m */; };
 		FA215A6821084ADB005CF06C /* YJImageActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA215A6721084ADB005CF06C /* YJImageActionViewController.m */; };
+		FA420793213FC49200B8CB2C /* testwai.css in Resources */ = {isa = PBXBuildFile; fileRef = FA420792213FC49100B8CB2C /* testwai.css */; };
+		FA420796213FCEDE00B8CB2C /* WKLoadHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA420795213FCEDE00B8CB2C /* WKLoadHtmlViewController.m */; };
 		FA4A3E2A1E0D087000395DE6 /* FDTMasoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4A3E291E0D087000395DE6 /* FDTMasoryCell.m */; };
 		FA4A3E2E1E0E5A2E00395DE6 /* TestAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4A3E2D1E0E5A2E00395DE6 /* TestAVPlayerViewController.m */; };
 		FA4A3E311E0E5A9700395DE6 /* 智能拼图.mov in Resources */ = {isa = PBXBuildFile; fileRef = FA4A3E301E0E5A9700395DE6 /* 智能拼图.mov */; };
@@ -94,6 +96,9 @@
 		FA215A6421084643005CF06C /* TKImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKImageView.m; sourceTree = "<group>"; };
 		FA215A6621084ADB005CF06C /* YJImageActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJImageActionViewController.h; sourceTree = "<group>"; };
 		FA215A6721084ADB005CF06C /* YJImageActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJImageActionViewController.m; sourceTree = "<group>"; };
+		FA420792213FC49100B8CB2C /* testwai.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = testwai.css; sourceTree = "<group>"; };
+		FA420794213FCEDE00B8CB2C /* WKLoadHtmlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKLoadHtmlViewController.h; sourceTree = "<group>"; };
+		FA420795213FCEDE00B8CB2C /* WKLoadHtmlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKLoadHtmlViewController.m; sourceTree = "<group>"; };
 		FA4A3E281E0D087000395DE6 /* FDTMasoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTMasoryCell.h; sourceTree = "<group>"; };
 		FA4A3E291E0D087000395DE6 /* FDTMasoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTMasoryCell.m; sourceTree = "<group>"; };
 		FA4A3E2C1E0E5A2E00395DE6 /* TestAVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAVPlayerViewController.h; sourceTree = "<group>"; };
@@ -350,8 +355,11 @@
 		FA6E9BF51E27595E002849E6 /* WKWebView */ = {
 			isa = PBXGroup;
 			children = (
+				FA420792213FC49100B8CB2C /* testwai.css */,
 				FA6E9BF61E275974002849E6 /* WKWebViewViewController.h */,
 				FA6E9BF71E275974002849E6 /* WKWebViewViewController.m */,
+				FA420794213FCEDE00B8CB2C /* WKLoadHtmlViewController.h */,
+				FA420795213FCEDE00B8CB2C /* WKLoadHtmlViewController.m */,
 			);
 			name = WKWebView;
 			sourceTree = "<group>";
@@ -704,6 +712,7 @@
 				FAB633211E6A55A7007DFF8B /* CornerCell.xib in Resources */,
 				FAB22EF11D51CE9400B46C51 /* Assets.xcassets in Resources */,
 				FA4A3E351E0E64E900395DE6 /* TestAVPlayerViewController.xib in Resources */,
+				FA420793213FC49200B8CB2C /* testwai.css in Resources */,
 				FAF574BF1E0CCBC6003F81E5 /* FDTCell.xib in Resources */,
 				FA4A3E311E0E5A9700395DE6 /* 智能拼图.mov in Resources */,
 				FAB22EEF1D51CE9400B46C51 /* Main.storyboard in Resources */,
@@ -787,6 +796,7 @@
 				FA6E9BF81E275974002849E6 /* WKWebViewViewController.m in Sources */,
 				FA4A3E2A1E0D087000395DE6 /* FDTMasoryCell.m in Sources */,
 				FADE07A71E4AC3DC00631ACB /* YJBezierPath.m in Sources */,
+				FA420796213FCEDE00B8CB2C /* WKLoadHtmlViewController.m in Sources */,
 				FAF574BE1E0CCBC6003F81E5 /* FDTCell.m in Sources */,
 				FA4A3E3D1E1254DA00395DE6 /* JBSView.m in Sources */,
 				FA582C841E35DE86003860E1 /* NoXibView.m in Sources */,

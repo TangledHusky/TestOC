@@ -30,6 +30,7 @@
 #import "TestCornerTableViewController.h"
 #import "TestBuglyViewController.h"
 #import "YJImageClipViewcontroller.h"
+#import "WKLoadHtmlViewController.h"
 
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -61,7 +62,7 @@
                 @"openURL-打电话、短信、邮件",
                 @"GCD基础篇",
                 @"NSThread",
-                @"WKWebviw",
+                @"WKWebviw进度条",
                 @"UIWebviw进度条",
                 @"xib到试图显示之间的方法调用",
                 @"图片添加水印",
@@ -70,6 +71,7 @@
                 @"测试圆角性能",
                 @"bugly集成测试",
                 @"照片裁剪",
+                @"wkwebview loadHTMLString用外部样式",
                 nil];
     
     mytableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight-64) style:UITableViewStylePlain];
@@ -222,6 +224,12 @@
         }
         case 18:{
             YJImageClipViewcontroller *web = [[YJImageClipViewcontroller alloc] init];
+            web.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:web animated:YES];
+            break;
+        }
+        case 19:{
+            WKLoadHtmlViewController *web = [[WKLoadHtmlViewController alloc] init];
             web.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:web animated:YES];
             break;
